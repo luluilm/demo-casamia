@@ -288,38 +288,7 @@ a:hover {
   border-radius: 8px;
 }
 
-#google_translate_element {
-  display: inline-block;
-  margin-left: 15px;
-  vertical-align: middle;
-}
 
-.goog-te-banner-frame.skiptranslate {
-  display: none !important;
-}
-
-body {
-  top: 0px !important;
-}
-
-.goog-logo-link {
-  display: none !important;
-}
-
-.goog-te-gadget {
-  font-size: 0 !important;
-}
-
-.goog-te-gadget .goog-te-combo {
-  margin: 0;
-  padding: 6px 10px;
-  border-radius: 5px;
-  border: 1px solid #d4c094;
-  background-color: #e9e6d9;
-  color: #283c2e;
-  font-size: 14px;
-  font-weight: 500;
-}
 
 
 
