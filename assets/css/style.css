@@ -1,0 +1,291 @@
+:root {
+  --army: #283c2e;
+  --cream: #e9e6d9;
+  --gold: #ab9978;
+  --soft-gold: #d4c094;
+  --white: #ffffff;
+}
+
+/* ===== GLOBAL ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--army);
+  background-color: var(--white);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--army);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--gold);
+}
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(65%);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--white);
+}
+
+.hero-text h1 {
+  font-weight: 400;
+  font-size: 2.8rem;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about-section {
+  background-color: #ffffff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* posisi gambar dan card */
+.about-section .position-relative {
+  position: relative;
+}
+
+/* card menimpa sedikit gambar */
+.about-card {
+  background-color: #e9e6d9;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 85%;
+  transform: translateY(-50%);
+  width: 70%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  z-index: 2;
+}
+
+/* versi kebalik (kanan dan kiri) */
+.about-card.reverse {
+  left: auto;
+  right: 85%;
+  transform: translateY(-50%);
+}
+
+.about-card h3 {
+  color: #283c2e;
+  font-weight: 600;
+}
+
+.about-card p {
+  color: #283c2e;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.heritage-section p {
+  line-height: 1.7;
+  color: #e6e9d9;
+}
+
+.people-section p {
+  line-height: 1.7;
+  color: #e6e9d9;
+}
+
+
+/* responsive biar rapi di mobile */
+@media (max-width: 992px) {
+  .about-card, .about-card.reverse {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/* ===== PRODUCT PAGE ===== */
+
+/* Hero */
+.product-hero {
+  background-color: #ffffff;
+  padding: 100px 0 60px;
+}
+.product-hero h1 {
+  color: #283c2e;
+  font-weight: 600;
+}
+.product-hero p {
+  color: #283c2e;
+  font-size: 16px;
+}
+
+/* Product Section */
+.product-section {
+  background-color: #ffffff;
+}
+.product-card {
+  text-align: center;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+.product-card img {
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+.product-card:hover img {
+  transform: scale(1.05);
+}
+.product-card h5 {
+  margin-top: 15px;
+  color: #283c2e;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.product-card:hover h5 {
+  text-decoration: underline;
+  color: #ab9978;
+}
+
+/* ===== Product Card Style ===== */
+.product-card {
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-img {
+  border-radius: 10px 10px 0 0;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.05);
+}
+
+.card-title {
+  color: #283c2e;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.product-card:hover .card-title {
+  text-decoration: underline;
+  color: #ab9978;
+}
+
+/* Pastikan tinggi tiap card seragam */
+.card-body {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== PORTOFOLIO PAGE ===== */
+.portofolio-section {
+  background-color: #ffffff;
+}
+
+.portfolio-card {
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-card img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.05);
+}
+
+/* ===== CONTACT PAGE ===== */
+.contact-section {
+  background-color: #ffffff;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* warna platform */
+.contact-btn.whatsapp {
+  background-color: #25D366;
+}
+.contact-btn.email {
+  background-color: #0078d7;
+}
+.contact-btn.wechat {
+  background-color: #1aad19;
+}
+
+.contact-btn:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+
+/* ===== FOOTER ===== */
+.footer-section {
+  background-color: var(--army);
+  color: var(--cream);
+  font-size: 14px;
+  padding: 50px 0 20px;
+}
+
+.footer-section h6 {
+  color: var(--soft-gold);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.footer-section a {
+  color: var(--cream);
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: var(--soft-gold);
+}
+
+.footer-section hr {
+  border-color: rgba(255, 255, 255, 0.2);
+  margin: 20px 0;
+}
+
+.footer-section iframe {
+  border-radius: 8px;
+}
+
+
